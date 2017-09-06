@@ -31,11 +31,10 @@ class MongoPipeline(object):
         self.client.close()
 
     def process_item(self, item, spider):
-        # if isinstance(item, BaseInfoItem):
-        #     self.db[self.userinfo].insert(dict(item))
+        if isinstance(item, BaseInfoItem):
+            self.db[self.userinfo].insert(dict(item))
         if isinstance(item, TweetsItem):
-            if item.get('Co_oridinates')!=None:
-                self.db[self.Tweets].insert(dict(item))
+            self.db[self.Tweets].insert(dict(item))
 
 
 

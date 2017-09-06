@@ -27,8 +27,7 @@ ITEM_PIPELINES = {
 SCHEDULER = 'scrapy_redis.scheduler.Scheduler'
 DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
 SCHEDULER_PERSIST = True
-# SCHEDULER = 'scrapy_redis_bf.scheduler.Scheduler'
-# SCHEDULER_QUEUE_CLASS = 'scrapy_redis_bf.queue.SpiderSimpleQueue'
+
 ''' MySQL config'''
 MYSQL_HOST='localhost'
 MYSQL_DBNAME='weibo'

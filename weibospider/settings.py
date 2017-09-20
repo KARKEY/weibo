@@ -32,7 +32,7 @@ SCHEDULER_PERSIST = True
 MYSQL_HOST='localhost'
 MYSQL_DBNAME='weibo'
 MYSQL_USER='root'
-MYSQL_PASSWORD='KARKEY9725'
+MYSQL_PASSWORD='*****'
 
 '''Redis config'''
 REDIE_URL = None
